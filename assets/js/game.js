@@ -3,9 +3,9 @@ class Game {
       this.ctx = canvas.getContext("2d");
       this.player = new Player(this.ctx);
 
-}
+    }
 
- start() {
-    this.player.draw();
- }, 1000/60;
+    start() {
+        this.player.draw();
+    }
 }
