@@ -11,4 +11,20 @@ class Game {
             this.player.move();
         }, 1000 / 60);
     }
+
+    onKeyDown(code) {
+        this.player.onKeyDown(code);
+      }
+    
+    onKeyUp(code) {
+        this.player.onKeyUp(code);
+      }
+
+    onKeyRight(code) {
+        this.player.onKeyRight(code);
+      }
+    
+    onKeyLeft(code) {
+        this.player.onKeyLeft(code);
+      }
 }
