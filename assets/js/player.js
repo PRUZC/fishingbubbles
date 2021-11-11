@@ -1,9 +1,6 @@
 class Player {
     constructor(ctx) {
         this.ctx= ctx;
-        ctx.beginPath(ctx);
-    ctx.arc(150, 75, 10, 0, 2 * Math.PI);
-    ctx.stroke();
         this.x=  150;
         this.y = 75;
         this.w = 10;
@@ -13,7 +10,10 @@ class Player {
     }
 
     draw() {
-        this.ctx.fillRect(this.x, this.y, this.w, this.h);
+        this.ctx.beginPath();
+        this.ctx.arc(this.x, this.y, this.w, 0, 2 * Math.PI);
+        this.ctx.stroke();
+        
        
     }
 
@@ -24,11 +24,9 @@ class Player {
         }
 
         if (this.x <= 0) {
-            this.vx  -this.vx;
+            this.vx = -this.vx;
         }
 
         if (this.y + this.h >= this.ctx.canvas.height) {
             this.vy = -this.vy;
         }
-    }
-}
