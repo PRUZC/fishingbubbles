@@ -3,7 +3,7 @@ class Player {
         this.ctx= ctx;
         this.x=  150;
         this.y = 75;
-        this.w = 10;
+        this.w = 20;
         this.h = 0;
         this.vx = 0;
         this.vy = 0;

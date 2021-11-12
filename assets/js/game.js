@@ -2,14 +2,16 @@ class Game {
     constructor(canvas) {
       this.ctx = canvas.getContext("2d");
       this.player = new Player(this.ctx);
+      this.bubble = new Bubble();
     }
 
     start() {
         setInterval(() => {
             ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            handleBubbles();
             this.player.draw();
             this.player.move();
-        }, 1000 / 60);
+        }, 1000 / 15);
     }
 
     onKeyDown(code) {
