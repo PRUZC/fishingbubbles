@@ -3,7 +3,7 @@ class Bubble {
         this.x = Math.random() * canvas.width;
         this.y = canvas.height + 100;
         this.radius = 20;
-        this.speed = Math.random() * 2 + 1;
+        this.speed = Math.random() * 5 + 1;
         this.distance;
     }
     update(){
@@ -21,7 +21,7 @@ class Bubble {
 
 function handleBubbles(){
    
-    if (gameFrame % 100 == 0){
+    if (gameFrame % 50 == 0){
         bubblesArray.push(new Bubble());
     }
     for (let i = 0; i < bubblesArray.length; i++){

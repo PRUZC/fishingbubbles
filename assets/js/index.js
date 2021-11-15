@@ -4,6 +4,7 @@ const ctx = canvas.getContext('2d');
 const game = new Game(canvas);
 const player = new Player(ctx);
 const bubblesArray = [];
+const background = new Background(ctx);
 
 game.start();
 
@@ -18,7 +19,7 @@ document.addEventListener('keyup', (event) => {
 
 let score = 0;
 let gameFrame = 0;
-ctx.font = '50px Georgia';
+ctx.font = '20px Georgia';
 
 
 
