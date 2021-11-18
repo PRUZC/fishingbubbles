@@ -11,8 +11,9 @@ class Game {
             ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
             this.background.draw();
             this.background.move();
-            handleBubbles();
             
+            handleBubbles();
+          
             this.player.draw();
             this.player.move();
             ctx.fillText('score: ' + score, 10, 50);

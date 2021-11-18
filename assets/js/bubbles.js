@@ -5,6 +5,9 @@ class Bubble {
         this.radius = 20;
         this.speed = Math.random() * 5 + 1;
         this.distance;
+
+        this.BubbleImg = new Image();
+        this.BubbleImg.src = 'assets/img/buble_spritesheet.png';
     }
     update(){
         this.y -= this.speed;
