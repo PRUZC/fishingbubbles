@@ -102,4 +102,9 @@ class Player {
             this.vx = 0;
         }
     }
+
+    collidesWith () {
+        // si colisione con el buble
+        // el bubble.hitted = true
+    }
 }

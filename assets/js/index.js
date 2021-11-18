@@ -18,7 +18,7 @@ document.addEventListener('keyup', (event) => {
 })
 
 let score = 0;
-let gameFrame = 0;
+
 ctx.font = '20px Georgia';
 
 
